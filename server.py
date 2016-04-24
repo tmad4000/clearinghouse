@@ -1,10 +1,13 @@
 import os
 from flask import Flask, render_template, request
 import stripe
+    # 'secret_key': os.environ['SECRET_KEY'],
+    # 'publishable_key': os.environ['PUBLISHABLE_KEY']
+
 
 stripe_keys = {
-    'secret_key': os.environ['SECRET_KEY'],
-    'publishable_key': os.environ['PUBLISHABLE_KEY']
+    'secret_key': 'asdf',
+    'publishable_key': 'asdf'
 }
 
 stripe.api_key = stripe_keys['secret_key']
